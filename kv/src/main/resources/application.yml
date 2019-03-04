@@ -1,0 +1,20 @@
+data:
+  directory: data
+  delimeter: "~@@@~"
+
+server:
+  port: 8080
+  
+
+spring:
+  application:
+    name: kv-service
+ 
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+       defaultZone: http://localhost:8761/eureka
+    instance:
+    preferIpAddress: true
